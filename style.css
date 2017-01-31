@@ -1,0 +1,275 @@
+/*
+Theme Name: Portfolio
+Theme URI: http://wordpress.org/themes/bbportfolio
+Author: bouncingball
+Author URI: http://bouncingballonline.com
+Description: Theme of Bouncing Ball Portfolio
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: responsive
+Text Domain: bbportfolio
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/****** General Styles *********/
+
+@font-face {
+  font-family: Neue Haas Grotesk Light;  
+  src: url(fonts/NHaasGroteskTXPro-55Rg.ttf);  
+  font-weight: normal;  
+}
+
+@font-face {
+  font-family: Neue Haas Grotesk Medium;  
+  src: url(fonts/NHaasGroteskTXPro-65Md.ttf);  
+  font-weight: normal;  
+}
+
+body {
+  margin: 0;
+  font-family: Neue Haas Grotesk Light;
+  padding-top: 50px;
+}
+
+
+
+
+
+/****** Navigation Style *********/
+.navbar {
+  margin: 0;
+  border: none;
+  background-color: #fff;
+}
+
+.navbar ul {
+  margin-right: 5%;
+}
+
+.navbar li a {
+  color: #000;
+  font-size: 1.7em;
+  padding: 30px;
+}
+
+
+.navbar li a:hover {
+  background-color: #fff;
+  font-family: Neue Haas Grotesk Medium;
+}
+
+.navbar li a:focus {
+  background-color: #fff;
+  font-family: Neue Haas Grotesk Medium;
+}
+
+
+/****** Page sections *********/
+
+.page-section {
+  width: 100%;
+  min-height: 800px;
+  padding: 120px 0;
+}
+
+#about-text {
+  font-family: Neue Haas Grotesk Medium;
+}
+
+#about-arrow {
+  padding-top: 5%;
+}
+
+#about-pic {
+  text-align: right;
+  padding-right: 180px;
+  margin-top: 50px;
+}
+
+/****** Tiles Style *********/
+
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    /* inline-block space fix */
+    margin-right:-4px;
+    width: 300px;
+}
+
+/*.dynamicTile {
+  min-width: 1250px;
+}
+
+.dynamicTile .col-md-3.col-sm-4.col-xs-8{
+    padding:5px;
+}
+*/
+
+
+.overlay {
+  position: absolute; 
+  width: 300px;
+  height: 300px;
+  border-radius: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  opacity: 0;
+  text-align: center;
+} 
+
+.overlay a.info {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 30% 0 0 0;
+  background-color: transparent;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #000;
+  text-transform: uppercase;
+}
+
+.overlay:hover {
+  opacity: 0.9;
+}
+
+.overlay:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+
+
+/****** Footer Style *********/
+
+
+
+.footer {
+  height: 200px;
+  text-align: center;
+  color: #000;
+}
+
+
+.email {
+  font-family: Neue Haas Grotesk Medium; 
+  padding-bottom: 20px;
+}
+
+
+#about-arrow {
+animation: bounce 1.2s ease-out;
+};
+
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform:translateY(-100%);
+  }
+  5% {
+    -webkit-transform:translateY(-100%);
+  }
+  15% {
+    -webkit-transform:translateY(0);
+    padding: 4px auto;
+  }
+  20% {
+    -webkit-transform:translateY(-80%);
+  }
+  25% {
+    -webkit-transform:translateY(0%);
+    padding: 4px auto;
+  }
+  30% {
+    -webkit-transform:translateY(-70%);
+  }
+  35% {
+    -webkit-transform:translateY(0%);
+    padding: 5px auto;
+  }
+  40% {
+    -webkit-transform:translateY(-60%);
+  }
+  45% {
+    -webkit-transform:translateY(0%);
+    padding: 5px auto;
+  }
+  50% {
+    -webkit-transform:translateY(-50%);
+  }
+  55% {
+    -webkit-transform:translateY(0%);
+    padding: 6px auto;
+  }
+  60% {
+    -webkit-transform:translateY(-30%);
+  }
+  65% {
+    -webkit-transform:translateY(0%);
+    padding: 6px auto;
+  }
+  70% {
+    -webkit-transform:translateY(-15%);
+  }
+  75% {
+    -webkit-transform:translateY(0);
+    padding: 8px auto;
+  }
+  80% {
+    -webkit-transform:translateY(-10%);
+  }
+  85% {
+    -webkit-transform:translateY(0);
+    padding: 8px auto;
+  }
+  90% {
+    -webkit-transform:translateY(-5%);
+  }
+  95% {
+    -webkit-transform:translateY(0);
+    padding: 10px;
+  }
+  100% {
+    -webkit-transform:translateY(0);
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
