@@ -10,7 +10,7 @@
 
       <div id="about-text" class="col-xs-6">
 
-        <h1>All over the internet.</h1>
+        <h1>All over the internet...</h1>
 
         <a href="#" class="scroll-link" data-id="work"><img id="about-arrow" src="<?php bloginfo('template_directory'); ?>/images/arrow.png" alt="whatever"/></a>
 
